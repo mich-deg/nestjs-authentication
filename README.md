@@ -49,8 +49,31 @@ $ cd nestjs-authentication
 
 # running the app -- dev mode
 $ pnpm run start
-
 ```
+
+### Boost your development speed with SWC
+
+> :bulb: **Tip:** For a significant boost in your development workflow, consider using [SWC](https://docs.nestjs.com/recipes/swc) as your compiler. SWC offers approximately 20x faster compilation compared to the default TypeScript compiler.
+
+Here's how to get started with SWC:
+
+- Install SWC packages:
+
+```bash
+$ pnpm add -D @swc/cli @swc/core
+```
+
+- Update your nest-cli.json file:
+
+```json
+{
+  "compilerOptions": {
+    "builder": "swc"
+  }
+}
+```
+
+With these steps, SWC will be used as the default compiler for your NestJS project, accelerating your development process.
 
 ## Stay in touch
 
