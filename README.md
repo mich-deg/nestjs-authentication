@@ -1,73 +1,58 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# <p align="center"> Welcome to Your NestJS Security Journey! </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Introduction
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+<p>Building secure web applications is paramount in today's digital landscape. Therefore, at the heart of web security lies the ability to verify a user's identity <b> (authentication) </b> and ensure they possess the necessary permissions to access specific resources <b> (authorization) </b>. These two pillars work hand-in-hand to safeguard your application from unauthorized access and potential misuse. </p>
 
-## Description
+<p>This in-depth guide empowers you to implement robust authentication and authorization mechanisms within your NestJS project. </p>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### What's NestJS ?
 
-## Installation
+> a progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient, scalable, and enterprise-grade server-side applications with TypeScript / JavaScript.
+
+Feel free to refer to the official [NestJS](https://github.com/nestjs/nest) docs for further information on the framework.
+
+### Prerequisites
+
+This guide assumes you have already installed:
+
+- <a href="http://nodejs.org" target="_blank">Node.js</a> (version >= 16) on your operating system
+- <a href="https://docs.nestjs.com/cli/overview" target="_blank"> NestJS CLI</a> - If you haven't already installed the NestJS CLI globally, run the following command in your OS terminal:
 
 ```bash
-$ pnpm install
+$ pnpm install -g @nestjs/cli
 ```
 
-## Running the app
+### Scaffolding a new NestJS project
+
+Use the Nest CLI to create a new project with the following commands in your OS terminal:
 
 ```bash
-# development
+$ nest new < project-name >
+```
+
+Running this command will create:
+
+- A new project directory named project-name will be created
+- All the essential project dependencies will be installed. (Imagine these as building blocks for your application.)
+- A core folder named src will be created. This folder will hold the main code files for your project.
+
+<p align="center">
+  <img src="public/assets/images/project-scaffolding.png" alt="Project Scaffolding" />
+</p>
+
+Change your current directory to the new project’s directory and run the app:
+
+```bash
+# change directory
+$ cd nestjs-authentication
+
+# running the app -- dev mode
 $ pnpm run start
 
-# watch mode
-$ pnpm run start:dev
-
-# production mode
-$ pnpm run start:prod
 ```
-
-## Test
-
-```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- Author - [Michael D Asfaw](https://mike-bits.dev)
+- Youtube - [Mike Bits](http://www.youtube.com/@mike-bits)
